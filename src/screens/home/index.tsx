@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FlatList, Text, View } from 'react-native';
 import { Appointment } from '../../components/appointment';
+import { Background } from '../../components/background';
 import { ButtonAdd } from '../../components/button-add';
 import { CategorySelect } from '../../components/category-select';
 import { ListDivider } from '../../components/list-divider';
@@ -43,7 +44,7 @@ export function Home() {
   }
 
   return (
-    <View style={styles.container}>
+    <Background>
       <View style={styles.header}>
         <Profile />
         <ButtonAdd />
@@ -59,6 +60,6 @@ export function Home() {
           <Appointment data={item} style={styles.matches} />
         )} />
       </View>
-    </View>
+    </Background>
   );
 }
