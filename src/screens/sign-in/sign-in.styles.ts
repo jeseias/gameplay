@@ -1,15 +1,15 @@
-import { StyleSheet } from "react-native";
-import { theme  } from "../../global/styles/theme";
+import { StyleSheet } from 'react-native';
+import { theme } from '../../global/styles/theme';
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-  }, 
+  },
   image: {
     width: '100%',
-    height: 360
+    height: 360,
   },
   title: {
     color: theme.colors.heading,
@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
     fontSize: 40,
     marginBottom: 16,
     fontFamily: theme.fonts.title700,
-    lineHeight: 40
+    lineHeight: 40,
   },
   subTitle: {
     color: theme.colors.heading,
@@ -30,5 +30,5 @@ export const styles = StyleSheet.create({
   content: {
     marginTop: -40,
     paddingHorizontal: 50,
-  }
-})
+  },
+});

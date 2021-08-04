@@ -1,6 +1,6 @@
-import { StyleSheet } from "react-native";
-import { getStatusBarHeight } from "react-native-iphone-x-helper";
-import { theme } from "../../global/styles/theme";
+import { StyleSheet } from 'react-native';
+import { getStatusBarHeight } from 'react-native-iphone-x-helper';
+import { theme } from '../../global/styles/theme';
 
 export const styles = StyleSheet.create({
   container: {
@@ -17,6 +17,6 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
     fontFamily: theme.fonts.title700,
     fontSize: 20,
-    color: theme.colors.heading
-  }
-})
+    color: theme.colors.heading,
+  },
+});

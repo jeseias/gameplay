@@ -1,5 +1,5 @@
-import { StyleSheet } from "react-native";
-import { theme } from "../../global/styles/theme";
+import { StyleSheet } from 'react-native';
+import { theme } from '../../global/styles/theme';
 
 export const styles = StyleSheet.create({
   container: {
@@ -13,15 +13,15 @@ export const styles = StyleSheet.create({
     fontFamily: theme.fonts.title500,
     fontSize: 24,
     color: theme.colors.heading,
-    marginRight: 6
+    marginRight: 6,
   },
   username: {
     fontFamily: theme.fonts.title700,
     fontSize: 24,
-    color: theme.colors.heading
+    color: theme.colors.heading,
   },
   message: {
     fontFamily: theme.fonts.text400,
-    color: theme.colors.highlight
-  }
-})
+    color: theme.colors.highlight,
+  },
+});

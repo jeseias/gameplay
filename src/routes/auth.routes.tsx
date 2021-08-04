@@ -7,7 +7,7 @@ import { theme } from '../global/styles/theme';
 import { AppointmentDetails } from '../screens/appointment-details';
 import { AppointmentCreate } from '../screens/appointment-create';
 
-const { Navigator, Screen } = createStackNavigator()
+const { Navigator, Screen } = createStackNavigator();
 
 export function AuthRoutes() {
   return (
@@ -15,26 +15,14 @@ export function AuthRoutes() {
       headerMode="none"
       screenOptions={{
         cardStyle: {
-          backgroundColor: theme.colors.secondary100
-        }
+          backgroundColor: theme.colors.secondary100,
+        },
       }}
     >
-      <Screen
-        name="SignIn"
-        component={SignIn}
-      />
-      <Screen
-        name="Home"
-        component={Home}
-      />
-      <Screen
-        name="AppointmentDetails"
-        component={AppointmentDetails}
-      />
-      <Screen
-        name="AppointmentCreate"
-        component={AppointmentCreate}
-      />
+      <Screen name="SignIn" component={SignIn} />
+      <Screen name="Home" component={Home} />
+      <Screen name="AppointmentDetails" component={AppointmentDetails} />
+      <Screen name="AppointmentCreate" component={AppointmentCreate} />
     </Navigator>
   );
 }

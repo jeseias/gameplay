@@ -7,7 +7,7 @@ import { styles } from './guilds.styles';
 
 interface GuildsProps {
   handleGuildSelect: (guild: GuildItemProps) => void;
-} 
+}
 
 export function Guilds({ handleGuildSelect }: GuildsProps) {
   const guilds = [
@@ -15,27 +15,27 @@ export function Guilds({ handleGuildSelect }: GuildsProps) {
       id: '1',
       name: 'Lendários',
       icon: 'image.png',
-      owner: true
+      owner: true,
     },
     {
       id: '2',
       name: 'Galera do game',
       icon: 'image.png',
-      owner: true
-    }
-  ]
+      owner: true,
+    },
+  ];
   return (
     <View style={styles.container}>
       <FlatList
         data={guilds}
-        ItemSeparatorComponent={() => <ListDivider />}
+        ItemSeparatorComponent={() => <ListDivider isCentered />}
+        ListHeaderComponent={() => <ListDivider isCentered />}
         showsVerticalScrollIndicator={false}
         style={styles.guilds}
         keyExtractor={item => item.id}
-        renderItem={({ item }) => (
-          <Guild data={item} onPress={() => handleGuildSelect(item)} />
-        )}
+        contentContainerStyle={{ paddingBottom: 68, paddingTop: 103 }}
+        renderItem={({ item }) => <Guild data={item} onPress={() => handleGuildSelect(item)} />}
       />
     </View>
-  )
+  );
 }

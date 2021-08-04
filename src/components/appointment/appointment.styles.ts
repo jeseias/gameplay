@@ -1,5 +1,5 @@
-import { StyleSheet } from "react-native";
-import { theme } from "../../global/styles/theme";
+import { StyleSheet } from 'react-native';
+import { theme } from '../../global/styles/theme';
 
 export const styles = StyleSheet.create({
   container: {
@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   content: {
-    flex: 1
+    flex: 1,
   },
   header: {
     width: '100%',
@@ -25,7 +25,7 @@ export const styles = StyleSheet.create({
     fontFamily: theme.fonts.text400,
     color: theme.colors.highlight,
     fontSize: 13,
-    marginRight: 24
+    marginRight: 24,
   },
   footer: {
     width: '100%',
@@ -44,12 +44,12 @@ export const styles = StyleSheet.create({
     fontFamily: theme.fonts.text500,
     color: theme.colors.heading,
     fontSize: 13,
-    marginLeft: 7
+    marginLeft: 7,
   },
   player: {
     fontFamily: theme.fonts.text500,
     fontSize: 13,
     marginLeft: 7,
-    marginRight: 24
-  }
-})
+    marginRight: 24,
+  },
+});

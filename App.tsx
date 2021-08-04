@@ -10,7 +10,6 @@ import { Background } from './src/components/background';
 import { Routes } from './src/routes';
 
 export default function App() {
-
   const [fontsLoaded] = useFonts({
     Inter_400Regular,
     Inter_500Medium,

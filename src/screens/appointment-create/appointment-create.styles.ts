@@ -1,6 +1,6 @@
-import { StyleSheet } from "react-native";
-import { getBottomSpace } from "react-native-iphone-x-helper";
-import { theme } from "../../global/styles/theme";
+import { StyleSheet } from 'react-native';
+import { getBottomSpace } from 'react-native-iphone-x-helper';
+import { theme } from '../../global/styles/theme';
 
 export const styles = StyleSheet.create({
   container: {
@@ -36,6 +36,7 @@ export const styles = StyleSheet.create({
     backgroundColor: theme.colors.secondary50,
     borderWidth: 1,
     borderRadius: 8,
+    borderColor: theme.colors.secondary50,
   },
   field: {
     width: '100%',
@@ -56,10 +57,10 @@ export const styles = StyleSheet.create({
   caracteresLimit: {
     fontFamily: theme.fonts.text400,
     fontSize: 13,
-    color: theme.colors.highlight
+    color: theme.colors.highlight,
   },
   footer: {
     marginVertical: 20,
     marginBottom: 56,
-  }
-})
+  },
+});

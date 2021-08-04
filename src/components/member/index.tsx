@@ -12,11 +12,11 @@ interface MemberItemProps {
 }
 
 interface MemberProps {
-  data: MemberItemProps
+  data: MemberItemProps;
 }
 
 export function Member({ data }: MemberProps) {
-  const { on, primary } = theme.colors
+  const { on, primary } = theme.colors;
   const isOnline = data.status === 'online';
 
   return (
@@ -25,12 +25,10 @@ export function Member({ data }: MemberProps) {
       <View>
         <Text style={styles.title}>{data.username}</Text>
         <View style={styles.status}>
-          <View style={[styles.bulletStatus, { backgroundColor: isOnline ? on : primary  }]} />
-          <Text style={styles.nameStatus}>
-            {isOnline ? 'Disponivel' : 'Ocupado'}
-          </Text>
+          <View style={[styles.bulletStatus, { backgroundColor: isOnline ? on : primary }]} />
+          <Text style={styles.nameStatus}>{isOnline ? 'Disponivel' : 'Ocupado'}</Text>
         </View>
       </View>
     </View>
-  )
+  );
 }

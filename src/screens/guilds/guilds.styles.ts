@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   container: {
@@ -8,5 +8,5 @@ export const styles = StyleSheet.create({
   },
   guilds: {
     width: '100%',
-  }
-})
+  },
+});

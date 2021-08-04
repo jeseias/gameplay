@@ -15,5 +15,5 @@ export function Profile() {
         <Text style={styles.message}>Hoje é dia de vitoria</Text>
       </View>
     </View>
-  );  
+  );
 }

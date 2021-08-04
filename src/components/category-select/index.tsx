@@ -1,8 +1,8 @@
-import React from 'react'
-import { RectButton, RectButtonProperties, ScrollView } from 'react-native-gesture-handler'
-import { styles } from './category-select.styles' 
-import { categories } from '../../utils/categories'
-import { Category } from '../category'
+import React from 'react';
+import { RectButton, RectButtonProperties, ScrollView } from 'react-native-gesture-handler';
+import { styles } from './category-select.styles';
+import { categories } from '../../utils/categories';
+import { Category } from '../category';
 
 interface CategorySelectProps {
   categorySelected: string;
@@ -13,7 +13,8 @@ interface CategorySelectProps {
 export function CategorySelect({
   categorySelected,
   setCategory,
-  hasCheckBox = false }: CategorySelectProps) {
+  hasCheckBox = false,
+}: CategorySelectProps) {
   return (
     <ScrollView
       horizontal
@@ -32,5 +33,5 @@ export function CategorySelect({
         />
       ))}
     </ScrollView>
-  )
+  );
 }
