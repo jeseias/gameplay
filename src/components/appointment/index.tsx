@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 import { RectButton, RectButtonProperties } from 'react-native-gesture-handler';
-import { LinearGradient } from 'react-native-svg';
+import { LinearGradient } from 'expo-linear-gradient';
 import { categories } from '../../utils/categories';
 import { GuildIcon } from '../guild-icon';
 import { styles } from './appointment.styles';
@@ -24,14 +24,16 @@ interface AppointmentProps extends RectButtonProperties {
 }
 
 export function Appointment({ data, ...rest }: AppointmentProps) {
-  const [category] = categories.filter(item => item.id === data.category);
+  const [category] = categories.filter((item) => item.id === data.category);
   const { owner } = data.guild;
-  const { primary, on } = theme.colors;
+  const {
+    primary, on, secondary50, secondary70,
+  } = theme.colors;
 
   return (
     <RectButton {...rest}>
       <View style={styles.container}>
-        <LinearGradient>
+        <LinearGradient style={styles.guildIconContainer} colors={[secondary50, secondary70]}>
           <GuildIcon />
         </LinearGradient>
         <View style={styles.content}>
